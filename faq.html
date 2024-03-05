@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/icone.png">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#accueil">Accueil</a></li>
+            <li><a href="presentation.html#Présentation">Présentation </a></li>
+            <li><a href="produits.html#Produits">Produits</a></li>
+            <li><a href="Partenaires.html">Partenaires</a></li>
+            <li><a href="contact.html#Contactez-nous">Contactez-nous  </a></li>
+            <li><a href="plan.html#Plan">Plan  </a></li>
+            <li><a href="faq.html#FAQ">FAQ</a></li>
+    </ul>
+    <img src="media/logo.PNG" alt="Logo" style="width: 70px; border-radius: 50%;" >
+    </nav>
+    <style>
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+    <h2>Des réponses à vos questions</h2>
+    <p>Cliquez sur chaque question pour voir la réponse</p>
+    <div class="question" onclick="toggleAnswer(1)">Question 1: Quel est le matériau traditionnellement utilisé pour fabriquer des jeans ?</div>
+<div class="answer" id="answer1">
+    <p>Le denim est le matériau traditionnellement utilisé pour fabriquer des jeans.</p>
+</div>
+
+<div class="question" onclick="toggleAnswer(2)">Question 2: Les jeans sont-ils unisexes ?</div>
+<div class="answer" id="answer2">
+    <p>Oui, les jeans sont généralement conçus pour être portés par les hommes et les femmes.</p>
+</div>
+
+<div class="question" onclick="toggleAnswer(3)">Question 3: Les jeans sont-ils adaptés à toutes les saisons ?</div>
+<div class="answer" id="answer3">
+    <p>Les jeans peuvent être portés toute l'année, mais certains styles peuvent être plus adaptés à certaines saisons que d'autres.</p>
+</div>
+
+<div class="question" onclick="toggleAnswer(4)">Question 4: Les jeans peuvent-ils être portés dans des environnements formels ?</div>
+<div class="answer" id="answer4">
+    <p>Certaines occasions formelles acceptent les jeans, mais il est préférable de choisir des styles et des lavages plus sobres.</p>
+</div>
+
+<div class="question" onclick="toggleAnswer(5)">Question 5: Comment prolonger la durée de vie des jeans ?</div>
+<div class="answer" id="answer5">
+    <p>Évitez de les laver fréquemment, utilisez des méthodes de lavage douces et évitez les températures élevées de séchage.</p>
+</div>
+
+    
+    <script>
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById("answer" + questionNumber);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+
+<footer>
+    <p>Copyright © 2024 WOENAGNO Komlavi Igneza</p>
+</footer>
+</body>
+</html>
+
+

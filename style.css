@@ -1,0 +1,370 @@
+/* Styles pour la navigation */
+.homepage-nav {
+    background-image: url('media/jean_accueil.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: space-between; /* Aligner les éléments à droite */
+    align-items: center; /* Aligner verticalement les éléments au centre */
+    background-color: #140101;
+    overflow: hidden;
+    color: rgb(31, 2, 2);
+    padding: 10px 20px; /* Ajouter un peu de marge intérieure */
+    padding-right: 40px; /* Ajuster l'espacement à droite */
+    flex: 1;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.product-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.product-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.purchase-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.manufacturing-info {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+.info-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+
+.logo-container {
+    order: 1; /* Changer l'ordre de l'affichage */
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+.search-bar {
+    float: right; /* Aligner à droite */
+    margin-right: 20px; /* Ajouter une marge à droite pour les éloigner du bord */
+}
+/* Styles pour la liste non ordonnée */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    float: right;
+    padding: 5px
+}
+
+/* Styles pour chaque élément de la liste */
+nav li {
+    float: left;
+}   
+
+/* Styles pour les liens dans chaque élément de la liste */
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Styles pour les liens au survol de la souris */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Styles pour les éléments de liste en ligne */
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
+}
+
+.contact-form {
+    width: 50% ; /* Largeur du formulaire */
+    margin: 0 auto; /* Centrer horizontalement */
+    padding: 20px; /* Espacement intérieur */
+    box-sizing: border-box; /* Inclure les bordures et les rembourrages dans la largeur et la hauteur */
+    text-align: center; /* Centrer le texte à l'intérieur du formulaire */
+}
+
+.contact-form h2 {
+    margin-top: 0; /* Supprimer la marge supérieure du titre */
+    text-align: center; /* Centrer le titre */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments à gauche */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 80%; /* Largeur pleine */
+    padding: 10px; /* Espacement intérieur */
+    margin-bottom: 5px; /* Espacement inférieur */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclure les bordures et les rembourrages dans la largeur et la hauteur */
+    
+}
+
+.contact-form input[type="submit"] {
+    width: 80%; /* Largeur pleine */
+    padding: 10px; /* Espacement intérieur */
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur */
+    
+
+}
+
+
+/* Styles pour la carte */
+.map {
+    width: 50%;
+    height: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5 10 10px ;
+}
+
+.map iframe {
+    width: 100%;
+    height: 90%;
+    border: none;
+    border-radius: 1px;
+
+}
+
+    
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles pour les questions et réponses */
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ccc;
+}
+
+.answer p {
+    margin: 0;
+}
+
+.question:hover {
+    background-color: #a5a1a1;
+}
+
+/* Styles pour le contenu principal et le pied de page */
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: auto;
+}
+
+
+.image-container {
+    position: relative; /* Pour permettre le positionnement relatif des éléments à l'intérieur */
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute; /* Positionnement absolu pour superposer le texte */
+    top: 25%; /* Aligner le haut de la boîte de texte à 50% de la hauteur de l'image */
+    left: 50%; /* Aligner la gauche de la boîte de texte à 50% de la largeur de l'image */
+    transform: translate(-50%, -50%); /* Déplacer la boîte de texte de moitié de sa largeur et hauteur pour la centrer */
+    text-align: center; /* Aligner le texte au centre */
+    color: white; /* Couleur du texte */
+}
+
+.text-overlay p,
+.text-overlay h1,
+.text-overlay h4,
+.text-overlay .row {
+    margin: 10;
+    padding: 0;
+}
+
+.text-overlay a {
+    display: inline-block;
+    margin-top: 20px; /* Espacement entre le texte et le lien */
+    padding: 10px 20px;
+    background-color: #333; /* Couleur de fond du lien */
+    color: white; /* Couleur du texte du lien */
+    text-decoration: none; /* Supprimer le soulignement du lien */
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    border-radius: 5px; /* Coins arrondis */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Normal state */
+.product {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Hover state */
+.product:hover {
+    background-color: #e7dada; 
+    cursor: pointer; 
+}
+
+.product:active {
+    transform: translateY(2px); 
+}
+
+
+.product:focus {
+    outline: 2px solid rgb(226, 226, 240); 
+}
+
+    select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    }
+    
+    
+    p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    }
+    
+    p:last-child {
+    text-align: center;
+    }
+    .partners {
+        text-align: center;
+    }
+    
+    .partner-logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 90px; 
+    }
+    
+    .partner-logos img {
+        margin: 0 150px; 
+            width: 64%;
+            height: 100%;
+            margin: 20 60px;
+            background-color: transparent;
+        }
+        
+       
+    
+     
